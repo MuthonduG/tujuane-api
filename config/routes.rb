@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :show]
 
   post 'sign_up', to: 'users#sign_up'
+  post 'log_in', to: 'auth#log_in'
+  
 end
