@@ -18,6 +18,7 @@ class ApplicationController < ActionController::API
                     unless @current_user
                         render json: { error: 'Unauthorized' }, status: :unauthorized
                     end
+                end
             rescue JWT::DecodeError
                 render json: { error: 'Token not provided' }
             end
