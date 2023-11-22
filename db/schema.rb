@@ -14,8 +14,8 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_22_114721) do
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "email"
-    t.integer "zipcode"
-    t.integer "password_digest"
+    t.string "zipcode"
+    t.string "password_digest"
     t.string "avatar", default: "https://cdn-icons-png.flaticon.com/512/10017/10017692.png"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
