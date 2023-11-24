@@ -7,7 +7,7 @@ class AuthController < ApplicationController
           token = generate_token(user)
           render json: token, status: :ok
         else
-          render json: { error: 'Invalid Username or Password' }
+          render json: { error: 'Invalid Username or Password' }, status: :not_found
         end
 
     end
