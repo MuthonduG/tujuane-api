@@ -43,6 +43,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_22_204214) do
     t.string "zipcode"
     t.string "password_digest"
     t.string "avatar", default: "https://cdn-icons-png.flaticon.com/512/10017/10017692.png"
+    t.integer "posts_viewed_count", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
